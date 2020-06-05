@@ -14,6 +14,9 @@ routes.get("/items", itemsController.index);
 
 // Create collect points
 routes.post("/points", pointsController.create);
+
+//List collect points
+routes.get("/points", pointsController.index);
 routes.get("/points/:id", pointsController.show);
 
 export default routes;
